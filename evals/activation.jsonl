@@ -1,0 +1,7 @@
+{"id": "cash-discovery", "should_trigger": true, "prompt": "Our shop makes a profit but the bank balance keeps shrinking. Help me review working capital and pick the operating priority."}
+{"id": "supplier-discovery", "should_trigger": true, "prompt": "Compare a supplier volume discount with our cash needs and inventory exposure before we commit."}
+{"id": "growth-discovery", "should_trigger": true, "prompt": "Review our subscription retention, customer acquisition payback, and cash capacity to decide whether to fund growth."}
+{"id": "biography", "should_trigger": false, "prompt": "Give me a brief biography of John D. Rockefeller. Use general historical knowledge and do not browse."}
+{"id": "portfolio", "should_trigger": false, "prompt": "Explain how a personal investor might compare index funds with individual stocks. Keep it general and do not make current market claims."}
+{"id": "accounting-code", "should_trigger": false, "prompt": "Write a short Python function that sums a list of invoice amounts. Only show the function."}
+{"id": "copywriting", "should_trigger": false, "prompt": "Rewrite this acquisition announcement to sound warmer: We acquired Acme and look forward to serving its customers. Just give the sentence."}

@@ -1,0 +1,5 @@
+period,currency,basis,metric,amount
+2026-09,USD,accrual,net_revenue,100000
+2026-09,USD,accrual,variable_costs_excluding_acquisition,54000
+2026-09,USD,accrual,fixed_operating_costs,20000
+2026-09,USD,accrual,operating_profit,26000

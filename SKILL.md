@@ -37,6 +37,8 @@ Approximate ranges are sufficient for an initial assessment. Give a provisional 
 
 Reconcile the time period, currency, and accounting basis. Distinguish booked revenue from collections, profit from cash, recurring operations from one-time items, and gross margin from contribution margin. Flag discrepancies neutrally and request the source ledger when they affect the recommendation.
 
+When financial files are supplied, inspect headers, units, dates, missing values, and subtotal or duplicate rows before aggregating. Preserve the source files. Trace consequential figures to the file, sheet/table, and row or named metric and period; distinguish user estimates from recorded values. Reconcile competing totals, show the effect of unresolved differences, and make the affected recommendation conditional rather than silently choosing a source. Missing values are unknown, not zero. Use available computation for material or repeated arithmetic and show enough inputs to reproduce it.
+
 Calculate only decision-relevant metrics, showing inputs, units, assumptions, and arithmetic:
 
 | Metric | Calculation and interpretation |
@@ -58,7 +60,15 @@ Define a baseline, a measurable target, and an intervention. If the constraint r
 
 ## Translate the playbook into decisions
 
-### Supplier leverage: the squeeze
+### Profitable growth: pricing, retention, and distribution
+
+When demand, retention, or distribution is the constraint, compare pricing, repeat purchase or retention, channel access, and customer acquisition before defaulting to supplier savings. Evaluate incremental contribution after acquisition and service costs, cohort retention, cash payback, capacity, and the time until collections. Distinguish one-time acquisition spending from recurring costs and avoid counting it twice.
+
+Use retained contribution, not revenue, to assess acquisition payback. A simple CAC / monthly contribution calculation assumes the customer remains active; check observed cohort survival and payment timing before treating it as recoverable cash. State the horizon and assumptions behind lifetime value; do not turn an uncertain extrapolation into a guaranteed return.
+
+Fund profitable demand when evidence, capacity, and downside liquidity support it. If retention or marginal economics are weak, prioritize the intervention that could repair them before increasing spend. For an uncertain pricing, retention, or channel change, define a bounded experiment with a baseline, a cash limit, a measurable outcome, and a scale or stop trigger. Account for customer response, cannibalization, and service quality without imposing universal payback targets.
+
+### Supplier leverage
 
 Compare total delivered cost, not just the posted rate. Model volume tiers, shipment consolidation, forecast commitments, specifications, payment terms, and service levels. Estimate the supplier's savings from serving the business more efficiently and use those savings to support a documented negotiation.
 
@@ -72,7 +82,7 @@ Compare build, buy, partner, and continued outsourcing. Include setup capital, u
 
 Integrate when control of a demonstrated bottleneck produces attractive incremental returns under realistic utilization. A pilot, alternative supplier, or negotiated service agreement may solve the problem with less capital.
 
-### Capital allocation: the war chest
+### Capital allocation
 
 Default to retaining earnings and funding the strongest opportunity in the core business. Recommend borrowing only after establishing viable unit economics, repayment capacity, and a funded liquidity buffer. Review rates, amortization, maturities, collateral, guarantees, and covenant headroom.
 
@@ -80,7 +90,9 @@ Model a base case and a plausible combined downside: weaker demand or retention,
 
 State the maximum affordable commitment supported by the cash model and the conditions that would pause investment. Judge incremental returns against the actual financing cost and the next-best use of capital; do not substitute accounting profit for available cash.
 
-### Acquisitions and partnerships: the consolidation
+For material build/buy/partner and acquisition commitments, compare incremental cash flows over a common decision horizon. Include setup and integration costs, capital tied up in operations, and any supported residual value or working-capital recovery at the date it occurs. Show payback when useful; use discounted cash flows when timing changes the choice, stating the discount rate and its source. Keep financing and discount-rate treatment consistent and avoid double counting. If the horizon or rate is unknown, show the dependency or ask for it instead of inventing a hurdle rate. Keep small decisions proportionate.
+
+### Acquisitions and partnerships
 
 Consider targets for capabilities, customers, distribution, or operating synergies. Compare acquisition with organic growth and partnership; the strongest rival may be overpriced or difficult to integrate. If no credible deal improves the core business, recommend none.
 
@@ -98,11 +110,11 @@ When technology changes the economics, compare adoption, partnership, acquisitio
 
 Lead with the diagnosis and the single highest priority. For a full business review, use the following five sections; for a narrow question, use only the relevant sections:
 
-- **The Battlefield:** customer needs, relevant competitors/substitutes, market conditions, and evidence quality. Distinguish established facts from hypotheses.
-- **The Highest Priority:** the constraint, supporting numbers, the proposed intervention, and its expected effect on cash or unit economics.
-- **The Squeeze:** the supplier or operating lever, negotiation terms, credible alternative, and any commitment required to earn the savings.
-- **The Consolidation:** a supported build/buy/partner decision, or the reasons to defer deals. Identify real targets only when evidence is available.
-- **The Long Game:** the reserve policy, reinvestment order, ownership tradeoffs, and triggers for scaling, waiting, or stopping.
+- **Market and evidence:** customer needs, relevant competitors/substitutes, market conditions, and evidence quality. Distinguish established facts from hypotheses.
+- **Highest priority:** the constraint, supporting numbers, the proposed intervention, and its expected effect on cash or unit economics.
+- **Operating and growth levers:** the pricing, retention, distribution, supplier, or operating intervention; its credible alternative and any commitment required to earn the benefit.
+- **Build, buy, or partner:** a supported decision, or the reasons to defer deals. Identify real targets only when evidence is available.
+- **Capital and execution:** the reserve policy, reinvestment order, ownership tradeoffs, and triggers for scaling, waiting, or stopping.
 
 For each material recommendation, include the evidence, expected benefit or justified range, cash required, principal downside, and the condition that would change the decision. Mark unknowns instead of inventing precision. Close a full review with a short execution ledger:
 
