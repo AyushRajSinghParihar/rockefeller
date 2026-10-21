@@ -5,3 +5,7 @@
 {"id": "portfolio", "should_trigger": false, "prompt": "Explain how a personal investor might compare index funds with individual stocks. Keep it general and do not make current market claims."}
 {"id": "accounting-code", "should_trigger": false, "prompt": "Write a short Python function that sums a list of invoice amounts. Only show the function."}
 {"id": "copywriting", "should_trigger": false, "prompt": "Rewrite this acquisition announcement to sound warmer: We acquired Acme and look forward to serving its customers. Just give the sentence."}
+{"id": "startup-discovery", "should_trigger": true, "prompt": "Help me assess paid demand and cash runway before hiring sales for our pre-revenue business."}
+{"id": "pricing-discovery", "should_trigger": true, "prompt": "Our manufacturer wants to raise prices. Compare contribution and volume loss before we decide our pricing strategy."}
+{"id": "capacity-discovery", "should_trigger": true, "prompt": "Help choose our business product mix with limited labor and machine hours, using contribution and demand caps."}
+{"id": "hobby-project", "should_trigger": false, "prompt": "Brainstorm colors and sound effects for a small Pong game I am making for fun. Just suggest a visual theme; no business analysis or browsing."}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title description">
+  <title id="title">Rockefeller — disciplined business decisions</title>
+  <desc id="description">Know the numbers. Find the constraint. Compound. A ledger and industrial illustration accompany a decision cycle: evidence, constraint, cash test, action, and review.</desc>
+  <defs>
+    <pattern id="ledger" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#172d2a" stroke-opacity=".055"/>
+    </pattern>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0 0L6 3L0 6" fill="none" stroke="#8a6837" stroke-width="1.2"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="360" rx="16" fill="#f5f0e6"/>
+  <rect width="1000" height="360" rx="16" fill="url(#ledger)"/>
+  <path d="M44 39H108" stroke="#8a6837" stroke-width="4"/>
+  <text x="40" y="128" fill="#172d2a" font-family="Georgia, 'DejaVu Serif', serif" font-size="84" letter-spacing="-3">Rockefeller</text>
+  <text x="44" y="184" fill="#172d2a" font-family="'DejaVu Sans', sans-serif" font-size="28">Know the numbers. Find the constraint. Compound.</text>
+  <g fill="none" stroke="#8a6837" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M760 133H947M775 133V91L810 73V91L845 73V133M845 103H910V133M875 103V45H893V103M914 133V80H931V133"/>
+    <path d="M789 109H799M815 109H825M860 118H870M888 118H898M875 61H893M914 96H931"/>
+    <path d="M879 32C865 27 870 16 881 17M896 29C907 22 902 13 896 11" stroke-opacity=".5"/>
+  </g>
+  <path d="M44 218H956" stroke="#172d2a" stroke-opacity=".18"/>
+  <g fill="#f5f0e6" stroke="#8a6837" stroke-opacity=".55">
+    <rect x="44" y="248" width="164" height="60" rx="5"/>
+    <rect x="226" y="248" width="164" height="60" rx="5"/>
+    <rect x="408" y="248" width="164" height="60" rx="5"/>
+    <rect x="590" y="248" width="164" height="60" rx="5"/>
+    <rect x="772" y="248" width="184" height="60" rx="5"/>
+  </g>
+  <g fill="#172d2a" font-family="'DejaVu Sans', sans-serif" font-size="25" text-anchor="middle">
+    <text x="126" y="287">Evidence</text>
+    <text x="308" y="287">Constraint</text>
+    <text x="490" y="287">Cash test</text>
+    <text x="672" y="287">Action</text>
+    <text x="864" y="287">Review</text>
+  </g>
+  <g fill="none" stroke="#8a6837" stroke-width="1.7" marker-end="url(#arrow)" aria-hidden="true">
+    <path d="M211 278H223M393 278H405M575 278H587M757 278H769"/>
+    <path d="M864 312V333H126V312" stroke-opacity=".65"/>
+  </g>
+</svg>

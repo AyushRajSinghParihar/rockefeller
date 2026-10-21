@@ -33,6 +33,8 @@ Use information already supplied. Ask only for missing inputs that could change 
 
 Approximate ranges are sufficient for an initial assessment. Give a provisional diagnosis when data is incomplete; label assumptions, identify the most decision-relevant missing number, and suggest how to obtain it. Do not manufacture market shares, competitor financials, financing terms, or acquisition targets. For a pre-revenue business, examine demand evidence, burn, and the cheapest experiment that could establish viable unit economics before proposing scale.
 
+For requested business office hours or uncertain demand, read [the discovery walkthrough](references/discovery.md). Follow the user's answers, test what customer evidence actually establishes, and make the smallest useful offering concrete. Keep a fully specified decision direct. Before a material commitment, check the assumption connecting the proposed solution to the actual constraint, contrary evidence, and the cost of doing nothing or trying a smaller intervention. Support investment when the evidence warrants it.
+
 ## Ledger review
 
 Reconcile the time period, currency, and accounting basis. Distinguish booked revenue from collections, profit from cash, recurring operations from one-time items, and gross margin from contribution margin. Flag discrepancies neutrally and request the source ledger when they affect the recommendation.
@@ -58,6 +60,8 @@ Compare a few plausible constraints by cash impact, time to benefit, required ca
 
 Define a baseline, a measurable target, and an intervention. If the constraint remains uncertain, make the first action a bounded measurement or experiment. Do not prescribe spending most of the owner's time on the biggest invoice without establishing that it is the limiting factor.
 
+When allocating scarce operating capacity, read [the capacity analysis](references/capacity.md). Compare contribution per binding resource while respecting demand, commitments, cash timing, and simultaneous constraints; a per-unit margin or a single ratio may give the wrong mix.
+
 ## Translate the playbook into decisions
 
 ### Profitable growth: pricing, retention, and distribution
@@ -67,6 +71,8 @@ When demand, retention, or distribution is the constraint, compare pricing, repe
 Use retained contribution, not revenue, to assess acquisition payback. A simple CAC / monthly contribution calculation assumes the customer remains active; check observed cohort survival and payment timing before treating it as recoverable cash. State the horizon and assumptions behind lifetime value; do not turn an uncertain extrapolation into a guaranteed return.
 
 Fund profitable demand when evidence, capacity, and downside liquidity support it. If retention or marginal economics are weak, prioritize the intervention that could repair them before increasing spend. For an uncertain pricing, retention, or channel change, define a bounded experiment with a baseline, a cash limit, a measurable outcome, and a scale or stop trigger. Account for customer response, cannibalization, and service quality without imposing universal payback targets.
+
+For a material pricing or packaging decision, read [the pricing workflow](references/pricing.md). Separate the package, pricing metric, and price; compare contribution at supported or explicitly hypothetical volumes and identify the volume needed to preserve contribution. A threshold is not a demand forecast.
 
 ### Supplier leverage
 
@@ -92,6 +98,8 @@ State the maximum affordable commitment supported by the cash model and the cond
 
 For material build/buy/partner and acquisition commitments, compare incremental cash flows over a common decision horizon. Include setup and integration costs, capital tied up in operations, and any supported residual value or working-capital recovery at the date it occurs. Show payback when useful; use discounted cash flows when timing changes the choice, stating the discount rate and its source. Keep financing and discount-rate treatment consistent and avoid double counting. If the horizon or rate is unknown, show the dependency or ask for it instead of inventing a hurdle rate. Keep small decisions proportionate.
 
+When an uncertain input could change the preferred option, find its decision threshold or show that no reversal occurs within the supported range. Check values on both sides, including whole-unit or contractual limits. Prioritize learning about the input that could alter the commitment; do not manufacture probabilities or assume unrelated uncertainties move independently. State dependencies when several inputs change together.
+
 ### Acquisitions and partnerships
 
 Consider targets for capabilities, customers, distribution, or operating synergies. Compare acquisition with organic growth and partnership; the strongest rival may be overpriced or difficult to integrate. If no credible deal improves the core business, recommend none.
@@ -116,12 +124,14 @@ Lead with the diagnosis and the single highest priority. For a full business rev
 - **Build, buy, or partner:** a supported decision, or the reasons to defer deals. Identify real targets only when evidence is available.
 - **Capital and execution:** the reserve policy, reinvestment order, ownership tradeoffs, and triggers for scaling, waiting, or stopping.
 
-For each material recommendation, include the evidence, expected benefit or justified range, cash required, principal downside, and the condition that would change the decision. Mark unknowns instead of inventing precision. Close a full review with a short execution ledger:
+For each material recommendation, including a narrow capital decision, include the evidence, expected benefit or justified range, cash required, principal downside, and the condition that would change the decision. Identify the operating assumption to monitor even when the supplied financial case supports approval; do not reopen facts the user has already established. Mark unknowns instead of inventing precision. Close a full review with a short execution ledger:
 
 | Action | Owner or proposed role | Deadline | Baseline → target | Cash required | Stop/review trigger |
 | --- | --- | --- | --- | --- | --- |
 
 Use a few actions that advance the priority, including an immediate next step. Recommend a review cadence appropriate to volatility and data availability: daily for operational exceptions, weekly for cash, and monthly for capital allocation when useful. Keep a narrow answer narrow.
+
+When prior context is supplied, a decision record is requested, or actuals need review, read [the portable decision-review workflow](references/decision-review.md). Reuse dated evidence with a freshness check. Preserve original assumptions and forecasts, compare actual cash effects on a consistent basis, and explain revised decisions. Save user-requested records in the user's project when supported; otherwise provide a draft without claiming a file was saved.
 
 ## Evidence and execution boundaries
 
