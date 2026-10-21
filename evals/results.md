@@ -70,3 +70,11 @@ SHA-256 values for the evaluated skill bodies and frozen case sets:
 | Revised `SKILL.md` | `89a00dd82710c148b8fee9c26ab58a533650a0f7ea5a028f0dc0f4575ee3ef80` |
 | `cases.jsonl` | `fcdd9c9b0a8a80211fb681b9300e8effcfecfa138b15b0a65fb85ab1b9dbe69b` |
 | `activation.jsonl` | `e5f2a16b05187b4e854d09ebf4d6ac8546a0b5c518f3ec7a0c2abed63948544a` |
+
+## Portability checks — October 21, 2026
+
+The core skill above is unchanged. Its frontmatter uses the standard `name` and `description` fields; the instructions require no named vendor tools, models, or CLIs. The README now documents the open format, multi-agent installation, native invocation, and manual use. The shared evaluation protocol also explains how to run the same cases with other hosts. The bundled runner remains an optional Codex adapter.
+
+Using `skills` CLI **1.7.0**, project-scoped copy installations from both the local checkout and `AyushRajSinghParihar/rockefeller` on GitHub accepted all four requested targets: **Claude Code, Codex, Cursor, and GitHub Copilot**. Each install wrote `.claude/skills/rockefeller/SKILL.md` and the shared `.agents/skills/rockefeller/SKILL.md`; all copies matched the revised core SHA-256 above. Cursor and Copilot share the latter project path in this installer. These were isolated temporary project installations, not changes to personal skill directories.
+
+This verifies installer acceptance and file integrity, not runtime discovery or decision quality in all four hosts. Claude Code **2.1.236** is present but its authentication status reported `loggedIn: false`; no Claude model run was attempted. The October 20 financial and activation scores remain Codex-only evidence. Other hosts can use the same cases and rubric, with host-specific discovery and tool isolation.

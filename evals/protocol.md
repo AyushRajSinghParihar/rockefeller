@@ -1,16 +1,25 @@
 # Rockefeller evaluation protocol
 
-These evaluations check decisions and evidence, not compliance with particular wording. They use synthetic businesses, fixed inputs, and no live accounts or counterparties.
+These evaluations check decisions and evidence, not compliance with particular wording. They use synthetic businesses, fixed inputs, and no live accounts or counterparties. The case data and grading method are agent agnostic; `run.py` is an optional Codex adapter, not a requirement for using or evaluating the skill.
 
 ## Contracts and cases
 
 `cases.jsonl` owns the behavioral checks. Each case identifies the observable contract, the credible regression it detects, and independently calculated expectations. There was no existing behavioral coverage when these cases were added. Cases exercise the agent's answer boundary; no production exports, test-only flags, exact-heading checks, or keyword-based grading are needed.
 
-`activation.jsonl` separately owns discovery checks. Explicitly invoking `$rockefeller` tests its instructions, not whether Codex chooses it automatically.
+`activation.jsonl` separately owns discovery checks. Explicitly invoking the skill tests its instructions, not whether the host chooses it automatically.
 
 The `holdout` cases are excluded from development runs. Run them after the revision is frozen; if a holdout leads to a fix, retain it as a regression and use a new case for the next independent check.
 
-## Run
+## Run with any agent
+
+1. Snapshot the original skill before editing and freeze the cases and expectations. Choose development or held-out cases from `cases.jsonl`; use `activation.jsonl` separately for discovery.
+2. Start a fresh workspace and session per case. Install the chosen variant using the host's native skill directory, or supply `SKILL.md` directly for an instruction-quality check. Provide only the case's `prompt` and named files from `fixtures/`; withhold its expectations, regression description, and this grading protocol.
+3. For behavioral comparisons, explicitly load the skill using that host's syntax. For no-skill baselines, omit it. Match model, tools, and settings within each host. Disable live connectors, browsing, hooks, and external actions for these synthetic cases using that host's controls, and preserve input files.
+4. Capture the prompt, skill and input hashes, host/model/version/settings, final answer, available trace evidence, and failures. Apply the grading rules below. Do not combine results from different hosts into a single original-versus-revised comparison.
+
+For activation checks, install the skill natively and use the exact natural prompt without naming or forcing the skill. Directly attaching `SKILL.md` cannot test automatic selection. Confirm loading through the host's observable trace; if that evidence is unavailable, report activation as unverified.
+
+## Optional Codex runner
 
 Requirements for evaluation only: Python 3.11+, Git, and an authenticated Codex CLI supporting the runner's isolation flags (verified with 0.162.1). Skill usage itself does not require this runner. Commands belong on the machine running Codex (THINKBOOK in the remote workstation setup). The runner disables apps, plugins, hooks, browser/computer use, delegation, web search, and locally configured MCP servers for these synthetic cases. It leaves the user's configuration files untouched. Inspect traces for any remaining host-provided tools before accepting a run.
 
@@ -40,7 +49,7 @@ Review the traces as well as final answers: source-file access, calculation comm
 
 ## Activation
 
-Activation prompts contain no explicit invocation or instruction to load Rockefeller. Install exactly one variant inside the temporary repository's `.agents/skills/rockefeller/`. A positive case passes only when the trace shows the agent actually reading that `SKILL.md`; a statement that it would use the skill is insufficient. Negative cases require a completed answer and no Rockefeller load. Diagnose ambiguous commands manually; the runner does not infer selection from text matching.
+Activation prompts contain no explicit invocation or instruction to load Rockefeller. Install exactly one variant in the host's native project skill directory: for example, `.claude/skills/rockefeller/` for Claude Code or `.agents/skills/rockefeller/` for Codex. A positive case passes only when the trace shows the agent actually reading that `SKILL.md`; a statement that it would use the skill is insufficient. Negative cases require a completed answer and no Rockefeller load. Diagnose ambiguous commands manually; the runner does not infer selection from text matching.
 
 Record the host's available competing skills and model when interpreting discovery. Do not claim activation across all hosts or catalogs from this local sample. Change the description only when observed misses or false positives justify it, then repeat affected activation cases and check for regressions.
 
